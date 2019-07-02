@@ -8,11 +8,10 @@ def map(arr)
   newArr
 end
 
-def reduce(arr, start = 0)
+def reduce(arr*)
   n = 0
-  value = start
   while n < arr.length do
-    value = yield( arr[n], value)
+    value = yield( arr[n])
      p value
     n += 1
   end
