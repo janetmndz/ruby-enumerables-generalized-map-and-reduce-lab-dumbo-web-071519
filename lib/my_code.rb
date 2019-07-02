@@ -15,5 +15,5 @@ def reduce(arr, start = 0)
     value = yield( arr[n], value)
     n += 1
   end
-  puts value != nil ? value : false
+  value != nil ? value : false
 end
