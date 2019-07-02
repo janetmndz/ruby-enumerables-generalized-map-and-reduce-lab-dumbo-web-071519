@@ -13,7 +13,7 @@ def reduce(arr, start = 0)
   value = start
   while n < arr.length do
     value = yield( arr[n], value)
-     p value
+    p value
     n += 1
   end
   value
