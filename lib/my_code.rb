@@ -16,5 +16,4 @@ def reduce(arr, start = 0)
     p value
     n += 1
   end
-  value
 end
