@@ -10,8 +10,9 @@ end
 
 def reduce(arr, start = 0)
   n = 0
+  value = start
   while n < arr.length do
-    value = yield(arr[n], start)
+    value = yield( arr[n], value)
      p value
     n += 1
   end
